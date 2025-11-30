@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://cdn.myrx.pw/uploads/2025/11/30/629d9e5aa96643eb97377038e238cfeb.jpg">
+<img src="https://cdn.myrx.pw/uploads/2025/11/30/629d9e5aa96643eb97377038e238cfeb.jpg" width="100" height="50">
 <h1>Mines Predictor Pro</h1>
 <p>The ultimate AI-powered tool for Mines game predictions.</p>
 
