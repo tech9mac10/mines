@@ -1,147 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mines Predictor Pro</title>
+    <title>Mines Predictor Pro - Official Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gaming: {
+                            dark: '#0f172a',
+                            light: '#1e293b',
+                            accent: '#3b82f6',
+                            glow: '#60a5fa'
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f4f6f8;
-        }
-        .container {
-            background: #ffffff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h1, h2, h3 {
-            color: #1a1a1a;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 10px;
-        }
-        .header-image {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        .meta-info {
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 0.95em;
-            color: #555;
-        }
-        .download-btn {
-            display: block;
-            text-align: center;
-            margin: 20px 0;
-        }
-        .platforms {
-            text-align: center;
-            font-weight: bold;
-            margin-bottom: 30px;
-            padding: 10px;
-            background: #f0f4f8;
-            border-radius: 6px;
-        }
-        ul, ol {
-            margin-bottom: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        .tags {
-            font-size: 0.9em;
-            color: #666;
-            background: #eee;
-            padding: 15px;
-            border-radius: 6px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            color: #666;
-        }
-        a {
-            color: #0366d6;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
     </style>
 </head>
-<body>
+<body class="bg-gaming-dark text-slate-200 font-sans antialiased selection:bg-gaming-accent selection:text-white">
 
-<div class="container">
-    <header>
-        <img src="https://cdn.myrx.pw/uploads/2025/11/30/629d9e5aa96643eb97377038e238cfeb.jpg" alt="Mines Predictor Pro Logo" class="header-image">
-        
-        <h1>Mines Predictor Pro</h1>
-        
-        <div class="meta-info">
-            <b>Status:</b> ✅ Online | <b>Version:</b> 4.0 | <b>Updated:</b> 2025
+    <nav class="fixed w-full z-50 glass-panel border-b border-slate-700/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-white tracking-wider"><i class="fa-solid fa-bomb text-gaming-accent mr-2"></i>Mines<span class="text-gaming-accent">Pro</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#features" class="hover:text-gaming-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Features</a>
+                        <a href="#download" class="hover:text-gaming-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Download</a>
+                        <a href="#contact" class="bg-gaming-accent hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-all shadow-lg shadow-blue-500/30">Get Started</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </nav>
 
-        <div class="download-btn">
-            <a href="https://t.me/minespredictorpro">
-                <img src="https://img.shields.io/badge/DOWNLOAD_NOW-Click_Here-blue?style=for-the-badge&logo=telegram" alt="Download Mines Predictor">
-            </a>
+    <div class="relative pt-32 pb-16 sm:pt-40 sm:pb-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="animate-fade-in-up">
+                <img src="https://cdn.myrx.pw/uploads/2025/11/30/629d9e5aa96643eb97377038e238cfeb.jpg" alt="Mines Predictor Logo" class="w-32 h-32 mx-auto rounded-2xl shadow-2xl mb-8 border-4 border-slate-700/50 hover:border-gaming-accent transition-colors duration-300">
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-4">
+                    Dominate the Game with <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">AI-Powered Predictions</span>
+                </h1>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-400">
+                    Get real-time, high-accuracy signals for 1win, Stake, and more. Maximize your win rate with the ultimate Mines companion tool.
+                </p>
+                
+                <div class="flex flex-wrap justify-center gap-4 mt-8 mb-10">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-500/10 text-green-400 border border-green-500/20">
+                        <span class="w-2 h-2 rounded-full bg-green-400 mr-2 animate-pulse"></span> Status: Online
+                    </span>
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                        <i class="fa-solid fa-code-branch mr-2"></i> v4.0.0
+                    </span>
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                        <i class="fa-solid fa-clock mr-2"></i> Updated: 2025
+                    </span>
+                </div>
+
+                <div class="flex justify-center gap-4">
+                    <a href="https://t.me/minespredictorpro" target="_blank" class="transform hover:-translate-y-1 transition-all duration-200 inline-flex items-center px-8 py-4 border border-transparent text-base font-medium rounded-xl text-white bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 shadow-lg shadow-blue-500/30">
+                        <i class="fa-brands fa-telegram text-xl mr-2"></i> Download Now
+                    </a>
+                </div>
+                
+                <p class="mt-4 text-sm text-slate-500">Available for Windows 🖥️ | iOS 🍎 | Android 🤖</p>
+            </div>
         </div>
-
-        <div class="platforms">
-            Available for: Windows 🖥️ | iOS 🍎 | Android 🤖
+        <div class="absolute top-0 left-1/2 w-full -translate-x-1/2 h-full overflow-hidden -z-10 pointer-events-none opacity-20">
+            <div class="absolute top-[20%] left-[20%] w-72 h-72 bg-blue-500 rounded-full blur-[100px]"></div>
+            <div class="absolute bottom-[20%] right-[20%] w-96 h-96 bg-purple-500 rounded-full blur-[100px]"></div>
         </div>
-    </header>
+    </div>
 
-    <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;">
+    <section id="features" class="py-20 bg-gaming-light/50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">Why Choose MinesPro?</h2>
+                <div class="w-20 h-1 bg-gaming-accent mx-auto rounded-full"></div>
+            </div>
 
-    <section id="about">
-        <h2>🚀 About The Tool</h2>
-        <p><strong>Mines Predictor Pro</strong> uses advanced AI algorithms to analyze game patterns and provide real-time, high-accuracy signals for the Mines game. Designed for 1win, Stake, and other major platforms, this tool helps users make data-driven decisions to increase win rates.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="glass-panel p-6 rounded-2xl hover:bg-slate-800 transition-colors duration-300 group">
+                    <div class="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-500/20 transition-colors">
+                        <i class="fa-solid fa-robot text-2xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">AI Precision</h3>
+                    <p class="text-slate-400 text-sm">Powered by advanced probability algorithms designed specifically to crack game patterns in real-time.</p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl hover:bg-slate-800 transition-colors duration-300 group">
+                    <div class="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-500/20 transition-colors">
+                        <i class="fa-solid fa-mobile-screen text-2xl text-purple-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Multi-Platform</h3>
+                    <p class="text-slate-400 text-sm">Seamlessly syncs across your devices. Use it on your PC at home or Android/iOS on the go.</p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl hover:bg-slate-800 transition-colors duration-300 group">
+                    <div class="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-green-500/20 transition-colors">
+                        <i class="fa-solid fa-bolt text-2xl text-green-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Instant Signals</h3>
+                    <p class="text-slate-400 text-sm">Zero latency. Get predictions exactly when you need them during live gameplay sessions.</p>
+                </div>
+=
+                <div class="glass-panel p-6 rounded-2xl hover:bg-slate-800 transition-colors duration-300 group">
+                    <div class="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-red-500/20 transition-colors">
+                        <i class="fa-solid fa-shield-halved text-2xl text-red-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Secure & Safe</h3>
+                    <p class="text-slate-400 text-sm">Built with anti-ban technology to ensure your account safety while using our prediction tools.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="features">
-        <h3>✨ Key Features</h3>
-        <ul>
-            <li><strong>🤖 AI-Powered Accuracy:</strong> Real-time signal calculation using probability algorithms.</li>
-            <li><strong>📱 Cross-Platform:</strong> Seamless performance on PC, Android APK, and iOS.</li>
-            <li><strong>⚡ Instant Signals:</strong> Low-latency predictions for live gameplay.</li>
-            <li><strong>🛡️ Secure & Free:</strong> Anti-ban protection and free updates.</li>
-        </ul>
-    </section>
+    <section id="download" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">How to Get Started</h2>
+                <p class="text-slate-400">Follow these simple steps to start winning today.</p>
+            </div>
 
-    <section id="installation">
-        <h2>📥 Installation</h2>
-        <ol>
-            <li><a href="https://t.me/minespredictorpro"><strong>Click here to Download via Telegram</strong></a>.</li>
-            <li>Install the APK (Android) or Exe (Windows).</li>
-            <li>Launch the app and select your casino platform.</li>
-            <li>Start winning with real-time predictions.</li>
-        </ol>
-    </section>
+            <div class="space-y-8">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-gaming-accent text-white font-bold text-lg">1</div>
+                    <div class="ml-6 glass-panel p-6 rounded-xl w-full">
+                        <h3 class="text-lg font-bold text-white mb-2">Download the App</h3>
+                        <p class="text-slate-400">Join our Telegram channel and download the latest version for your specific device (APK or EXE).</p>
+                        <a href="https://t.me/minespredictorpro" class="text-gaming-accent hover:text-blue-400 text-sm mt-2 inline-block font-medium">Download via Telegram &rarr;</a>
+                    </div>
+                </div>
 
-    <section id="tags">
-        <h2>🔍 Search Tags</h2>
-        <div class="tags">
-            Mines predictor download apk, Mines predictor AI, Mines signal bot free, Mines predictor for PC, 1win mines hack, Stake mines predictor, Mines predictor iOS, Real-time mines solver, Mines predictor pro mod apk.
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-slate-700 text-white font-bold text-lg">2</div>
+                    <div class="ml-6 glass-panel p-6 rounded-xl w-full">
+                        <h3 class="text-lg font-bold text-white mb-2">Install & Launch</h3>
+                        <p class="text-slate-400">Run the installer. If on Android, ensure "Unknown Sources" is enabled in settings.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-slate-700 text-white font-bold text-lg">3</div>
+                    <div class="ml-6 glass-panel p-6 rounded-xl w-full">
+                        <h3 class="text-lg font-bold text-white mb-2">Select Platform & Win</h3>
+                        <p class="text-slate-400">Open the app, select your casino (1win, Stake, etc.), and follow the real-time signals.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>Need help? Contact support at <a href="mailto:hackaviator@proton.me">hackaviator@proton.me</a></p>
+    <footer id="contact" class="bg-gaming-light border-t border-slate-700/50 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Mines Predictor Pro</h3>
+                    <p class="text-slate-400 text-sm">The #1 tool for Mines game analysis and prediction. Enhance your strategy with data-driven insights.</p>
+                </div>
+                <div class="text-left md:text-right">
+                    <h3 class="text-white font-bold text-lg mb-4">Contact</h3>
+                    <a href="mailto:hackaviator@proton.me" class="text-gaming-accent hover:text-white transition-colors">
+                        <i class="fa-solid fa-envelope mr-2"></i> hackaviator@proton.me
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-700 pt-8">
+                <div class="text-xs text-slate-600 mb-4 bg-black/20 p-4 rounded-lg">
+                    <span class="font-bold text-slate-500 block mb-2">Search Tags:</span>
+                    Mines predictor download apk, Mines predictor AI, Mines signal bot free, Mines predictor for PC, 1win mines hack, Stake mines predictor, Mines predictor iOS, Real-time mines solver, Mines predictor pro mod apk.
+                </div>
+                <p class="text-center text-slate-500 text-sm">&copy; 2025 Mines Predictor Pro. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
-</div>
 
 </body>
 </html>
